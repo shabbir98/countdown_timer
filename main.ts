@@ -15,7 +15,7 @@ async function startCountdown() {
     remainingTime -= 1000;
     const seconds = remainingTime / 1000;
 
-    if (seconds === 0) {
+    if (!seconds) {
       clearInterval(interval);
       console.log('Countdown finished!');
     } else {
